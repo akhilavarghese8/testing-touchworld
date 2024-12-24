@@ -1,0 +1,109 @@
+.sidenav-container {
+    height: 100vh;
+  }
+
+  mat-sidenav {
+    width: 250px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .active-link {
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+:host::ng-deep.mdc-list-item__primary-text {
+    color: #ffffff;
+}
+
+
+
+/* Overall container for the sidenav */
+.sidenav-container {
+  display: flex;
+  height: 100vh;
+  background: #f4f6f9; /* Light grey background */
+}
+
+/* Styling for the sidenav */
+.sidenav {
+  width: 250px; /* Fixed width for sidenav */
+  background: linear-gradient(135deg, #63504c, #FEB47B);
+
+  color: white;
+  padding: 0px;
+  box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidenav .mat-nav-list {
+  padding-top: 40px; /* Space for navigation links */
+}
+
+.sidenav .nav-link {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidenav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+  color: #fff;
+}
+
+.sidenav .active-link {
+  background-color: rgba(255, 255, 255, 0.2); /* Active link highlighting */
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Content area styling */
+.mat-sidenav-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.content {
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: 100%;
+}
+
+.content h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Optional: Styling for active router link (when it's selected) */
+.mat-list-item.active {
+  background-color: #FF7E5F;
+  color: white;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .sidenav {
+    width: 200px;
+  }
+  .sidenav-container {
+    flex-direction: column;
+  }
+  .mat-sidenav-content {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidenav {
+    width: 180px;
+  }
+}

@@ -1,0 +1,326 @@
+// /* Main container holding the image and form */
+// .container {
+//   display: flex;
+//   height: 100vh; /* Full page height */
+// }
+
+// /* Styling for the image side */
+// .image-side {
+//   flex: 1; /* Takes up 50% of the screen */
+//   background-color: #000; /* Optionally, add a background color if needed */
+// }
+
+// .image-side .image {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover; /* Ensures the image covers the area */
+// }
+
+// /* Styling for the login form side */
+// .login-side {
+//   flex: 1; /* Takes up 50% of the screen */
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background:rgb(232 16 16 / 50%);
+//   color: white;
+//   padding: 20px;
+// }
+
+// .login-form {
+//   width: 100%;
+//   max-width: 400px;
+//   background: rgba(0, 0, 0, 0.6);
+//   padding: 30px;
+//   border-radius: 10px;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+// }
+
+// .login-form h2 {
+//   text-align: center;
+//   margin-bottom: 20px;
+//   font-size: 24px;
+//   color: #fff;
+// }
+
+// .form-group {
+//   margin-bottom: 20px;
+// }
+
+// .form-group label {
+//   display: block;
+//   font-size: 14px;
+//   margin-bottom: 5px;
+//   color: #fff;
+// }
+
+// .form-group input {
+//   width: 100%;
+//   padding: 10px;
+//   border: none;
+//   border-radius: 5px;
+//   background: #fff;
+//   color: #333;
+//   font-size: 16px;
+// }
+
+// /* Error message styling */
+// .error {
+//   color: #ff4c4c;
+//   font-size: 12px;
+//   margin-top: 5px;
+// }
+
+// button {
+//   width: 100%;
+//   padding: 12px;
+//   border: none;
+//   background: #ff7e5f;
+//   color: white;
+//   font-size: 16px;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   transition: background-color 0.3s;
+// }
+
+// button:disabled {
+//   background: #ccc;
+//   cursor: not-allowed;
+// }
+
+// button:hover {
+//   background-color: #feb47b;
+// }
+
+// /* Error message styling for login failure */
+// .error-message {
+//   font-size: 14px;
+//   margin-top: 10px;
+//   color: #ff4c4c;
+// }
+
+
+
+/* Main container holding the image and form */
+/* Main container holding the image and form */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Styling for the image side */
+.image-side {
+  flex: 1;
+}
+
+.image-side .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Styling for the login form side */
+.login-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(273deg, #c53a8896, #000000e8);
+  color: white;
+  padding: 20px;
+}
+
+/* Login form styling */
+.login-form {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  text-align: left;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+// .input-container {
+//   position: relative;
+//   margin-top: 5px;
+// }
+
+// /* Input styling */
+// input {
+//   width: 100%;
+//   padding: 10px;
+//   border: none;
+//   border-bottom: 2px solid white; /* White line above the input */
+//   background: transparent;
+//   color: white;
+//   font-size: 16px;
+//   outline: none;
+// }
+
+// input::placeholder {
+//   color: #ddd;
+// }
+
+// /* Eye icon for password field */
+// .password-container {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .eye-icon {
+//   position: absolute;
+//   right: 10px;
+//   cursor: pointer;
+// }
+
+// /* Error messages */
+// .error {
+//   color: white;
+//   font-size: 12px;
+//   margin-top: 5px;
+// }
+
+// /* Login button */
+// button {
+//   width: 100%;
+//   padding: 12px;
+//   border: none;
+//   background: #ff3a3a; /* Red color for login button */
+//   color: white;
+//   font-size: 16px;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   transition: background-color 0.3s;
+// }
+
+// button:disabled {
+//   background: #ccc;
+//   cursor: not-allowed;
+// }
+
+// button:hover {
+//   background-color: #ff1f1f;
+// }
+/* Styling for the input container */
+.input-container {
+  position: relative; /* Positioning context for the eye icon */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid white; /* White line at the bottom of the input */
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  padding-right: 40px; /* Add padding to the right so the icon doesn't overlap the input text */
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+/* Positioning the eye icon inside the input field */
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password-container i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.error {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Optional: Styling for the error messages and form submission button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #ff3a3a; /* Red color for login button */
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #ff1f1f;
+}
+
+/* Signup link styling */
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+
+.bottom-text {
+  position: absolute;
+  bottom: 170px; /* Adjust distance from the bottom */
+  left: 75px; /* Align the text to the left */
+  color: white;
+  width: 80%; /* Optional: Set width to manage space */
+  text-align: left; /* Align text to the left */
+}
+
+.bottom-text h1 {
+  font-size: 3rem; /* Customize font size */
+  margin: 0;
+}
+
+.bottom-text h3 {
+  font-size: 1.2em; /* Customize font size */
+  margin: 5px 0;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons i {
+  cursor: pointer;
+  margin: 0 10px;
+}

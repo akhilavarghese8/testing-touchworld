@@ -1,0 +1,84 @@
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between; /* Push title to the left and other items to the right */
+  align-items: center;
+  padding: 10px;
+}
+
+/* Page Title */
+.page-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add a gap between search box and search button */
+  margin-left: auto; /* Push this container to the right end */
+}
+
+.search-box {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-btn {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.search-btn i {
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Add Button Styling */
+.add-btn {
+  background-color: #007bff; /* Blue */
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+/* Hover effect for Add Button */
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Delete Button Styling */
+.delete-btn {
+  background-color: #dc3545; /* Red */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Positioning of Table and Content */
+p-table {
+  width: 100%;
+  margin-top: 20px;
+}
+
